@@ -12,343 +12,6 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-AdConfigs _$AdConfigsFromJson(Map<String, dynamic> json) {
-  return _AdConfigs.fromJson(json);
-}
-
-/// @nodoc
-class _$AdConfigsTearOff {
-  const _$AdConfigsTearOff();
-
-  _AdConfigs call(
-      {@JsonKey(name: "enable")
-          bool enable = false,
-      @JsonKey(name: "banner_home")
-          BannerConfig bannerHome = const BannerConfig(),
-      @JsonKey(name: "banner_new_conversation")
-          BannerConfig bannerNewConversation = const BannerConfig(),
-      @JsonKey(name: "banner_conversation_setting")
-          BannerConfig bannerConversationSetting = const BannerConfig(),
-      @JsonKey(name: "interstitial_app")
-          InterstitialConfig interstitialApp = const InterstitialConfig()}) {
-    return _AdConfigs(
-      enable: enable,
-      bannerHome: bannerHome,
-      bannerNewConversation: bannerNewConversation,
-      bannerConversationSetting: bannerConversationSetting,
-      interstitialApp: interstitialApp,
-    );
-  }
-
-  AdConfigs fromJson(Map<String, Object> json) {
-    return AdConfigs.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $AdConfigs = _$AdConfigsTearOff();
-
-/// @nodoc
-mixin _$AdConfigs {
-  @JsonKey(name: "enable")
-  bool get enable => throw _privateConstructorUsedError;
-  @JsonKey(name: "banner_home")
-  BannerConfig get bannerHome => throw _privateConstructorUsedError;
-  @JsonKey(name: "banner_new_conversation")
-  BannerConfig get bannerNewConversation => throw _privateConstructorUsedError;
-  @JsonKey(name: "banner_conversation_setting")
-  BannerConfig get bannerConversationSetting =>
-      throw _privateConstructorUsedError;
-  @JsonKey(name: "interstitial_app")
-  InterstitialConfig get interstitialApp => throw _privateConstructorUsedError;
-
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $AdConfigsCopyWith<AdConfigs> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $AdConfigsCopyWith<$Res> {
-  factory $AdConfigsCopyWith(AdConfigs value, $Res Function(AdConfigs) then) =
-      _$AdConfigsCopyWithImpl<$Res>;
-  $Res call(
-      {@JsonKey(name: "enable")
-          bool enable,
-      @JsonKey(name: "banner_home")
-          BannerConfig bannerHome,
-      @JsonKey(name: "banner_new_conversation")
-          BannerConfig bannerNewConversation,
-      @JsonKey(name: "banner_conversation_setting")
-          BannerConfig bannerConversationSetting,
-      @JsonKey(name: "interstitial_app")
-          InterstitialConfig interstitialApp});
-
-  $BannerConfigCopyWith<$Res> get bannerHome;
-  $BannerConfigCopyWith<$Res> get bannerNewConversation;
-  $BannerConfigCopyWith<$Res> get bannerConversationSetting;
-  $InterstitialConfigCopyWith<$Res> get interstitialApp;
-}
-
-/// @nodoc
-class _$AdConfigsCopyWithImpl<$Res> implements $AdConfigsCopyWith<$Res> {
-  _$AdConfigsCopyWithImpl(this._value, this._then);
-
-  final AdConfigs _value;
-  // ignore: unused_field
-  final $Res Function(AdConfigs) _then;
-
-  @override
-  $Res call({
-    Object? enable = freezed,
-    Object? bannerHome = freezed,
-    Object? bannerNewConversation = freezed,
-    Object? bannerConversationSetting = freezed,
-    Object? interstitialApp = freezed,
-  }) {
-    return _then(_value.copyWith(
-      enable: enable == freezed
-          ? _value.enable
-          : enable // ignore: cast_nullable_to_non_nullable
-              as bool,
-      bannerHome: bannerHome == freezed
-          ? _value.bannerHome
-          : bannerHome // ignore: cast_nullable_to_non_nullable
-              as BannerConfig,
-      bannerNewConversation: bannerNewConversation == freezed
-          ? _value.bannerNewConversation
-          : bannerNewConversation // ignore: cast_nullable_to_non_nullable
-              as BannerConfig,
-      bannerConversationSetting: bannerConversationSetting == freezed
-          ? _value.bannerConversationSetting
-          : bannerConversationSetting // ignore: cast_nullable_to_non_nullable
-              as BannerConfig,
-      interstitialApp: interstitialApp == freezed
-          ? _value.interstitialApp
-          : interstitialApp // ignore: cast_nullable_to_non_nullable
-              as InterstitialConfig,
-    ));
-  }
-
-  @override
-  $BannerConfigCopyWith<$Res> get bannerHome {
-    return $BannerConfigCopyWith<$Res>(_value.bannerHome, (value) {
-      return _then(_value.copyWith(bannerHome: value));
-    });
-  }
-
-  @override
-  $BannerConfigCopyWith<$Res> get bannerNewConversation {
-    return $BannerConfigCopyWith<$Res>(_value.bannerNewConversation, (value) {
-      return _then(_value.copyWith(bannerNewConversation: value));
-    });
-  }
-
-  @override
-  $BannerConfigCopyWith<$Res> get bannerConversationSetting {
-    return $BannerConfigCopyWith<$Res>(_value.bannerConversationSetting,
-        (value) {
-      return _then(_value.copyWith(bannerConversationSetting: value));
-    });
-  }
-
-  @override
-  $InterstitialConfigCopyWith<$Res> get interstitialApp {
-    return $InterstitialConfigCopyWith<$Res>(_value.interstitialApp, (value) {
-      return _then(_value.copyWith(interstitialApp: value));
-    });
-  }
-}
-
-/// @nodoc
-abstract class _$AdConfigsCopyWith<$Res> implements $AdConfigsCopyWith<$Res> {
-  factory _$AdConfigsCopyWith(
-          _AdConfigs value, $Res Function(_AdConfigs) then) =
-      __$AdConfigsCopyWithImpl<$Res>;
-  @override
-  $Res call(
-      {@JsonKey(name: "enable")
-          bool enable,
-      @JsonKey(name: "banner_home")
-          BannerConfig bannerHome,
-      @JsonKey(name: "banner_new_conversation")
-          BannerConfig bannerNewConversation,
-      @JsonKey(name: "banner_conversation_setting")
-          BannerConfig bannerConversationSetting,
-      @JsonKey(name: "interstitial_app")
-          InterstitialConfig interstitialApp});
-
-  @override
-  $BannerConfigCopyWith<$Res> get bannerHome;
-  @override
-  $BannerConfigCopyWith<$Res> get bannerNewConversation;
-  @override
-  $BannerConfigCopyWith<$Res> get bannerConversationSetting;
-  @override
-  $InterstitialConfigCopyWith<$Res> get interstitialApp;
-}
-
-/// @nodoc
-class __$AdConfigsCopyWithImpl<$Res> extends _$AdConfigsCopyWithImpl<$Res>
-    implements _$AdConfigsCopyWith<$Res> {
-  __$AdConfigsCopyWithImpl(_AdConfigs _value, $Res Function(_AdConfigs) _then)
-      : super(_value, (v) => _then(v as _AdConfigs));
-
-  @override
-  _AdConfigs get _value => super._value as _AdConfigs;
-
-  @override
-  $Res call({
-    Object? enable = freezed,
-    Object? bannerHome = freezed,
-    Object? bannerNewConversation = freezed,
-    Object? bannerConversationSetting = freezed,
-    Object? interstitialApp = freezed,
-  }) {
-    return _then(_AdConfigs(
-      enable: enable == freezed
-          ? _value.enable
-          : enable // ignore: cast_nullable_to_non_nullable
-              as bool,
-      bannerHome: bannerHome == freezed
-          ? _value.bannerHome
-          : bannerHome // ignore: cast_nullable_to_non_nullable
-              as BannerConfig,
-      bannerNewConversation: bannerNewConversation == freezed
-          ? _value.bannerNewConversation
-          : bannerNewConversation // ignore: cast_nullable_to_non_nullable
-              as BannerConfig,
-      bannerConversationSetting: bannerConversationSetting == freezed
-          ? _value.bannerConversationSetting
-          : bannerConversationSetting // ignore: cast_nullable_to_non_nullable
-              as BannerConfig,
-      interstitialApp: interstitialApp == freezed
-          ? _value.interstitialApp
-          : interstitialApp // ignore: cast_nullable_to_non_nullable
-              as InterstitialConfig,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$_AdConfigs implements _AdConfigs {
-  const _$_AdConfigs(
-      {@JsonKey(name: "enable")
-          this.enable = false,
-      @JsonKey(name: "banner_home")
-          this.bannerHome = const BannerConfig(),
-      @JsonKey(name: "banner_new_conversation")
-          this.bannerNewConversation = const BannerConfig(),
-      @JsonKey(name: "banner_conversation_setting")
-          this.bannerConversationSetting = const BannerConfig(),
-      @JsonKey(name: "interstitial_app")
-          this.interstitialApp = const InterstitialConfig()});
-
-  factory _$_AdConfigs.fromJson(Map<String, dynamic> json) =>
-      _$_$_AdConfigsFromJson(json);
-
-  @override
-  @JsonKey(name: "enable")
-  final bool enable;
-  @override
-  @JsonKey(name: "banner_home")
-  final BannerConfig bannerHome;
-  @override
-  @JsonKey(name: "banner_new_conversation")
-  final BannerConfig bannerNewConversation;
-  @override
-  @JsonKey(name: "banner_conversation_setting")
-  final BannerConfig bannerConversationSetting;
-  @override
-  @JsonKey(name: "interstitial_app")
-  final InterstitialConfig interstitialApp;
-
-  @override
-  String toString() {
-    return 'AdConfigs(enable: $enable, bannerHome: $bannerHome, bannerNewConversation: $bannerNewConversation, bannerConversationSetting: $bannerConversationSetting, interstitialApp: $interstitialApp)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other is _AdConfigs &&
-            (identical(other.enable, enable) ||
-                const DeepCollectionEquality().equals(other.enable, enable)) &&
-            (identical(other.bannerHome, bannerHome) ||
-                const DeepCollectionEquality()
-                    .equals(other.bannerHome, bannerHome)) &&
-            (identical(other.bannerNewConversation, bannerNewConversation) ||
-                const DeepCollectionEquality().equals(
-                    other.bannerNewConversation, bannerNewConversation)) &&
-            (identical(other.bannerConversationSetting,
-                    bannerConversationSetting) ||
-                const DeepCollectionEquality().equals(
-                    other.bannerConversationSetting,
-                    bannerConversationSetting)) &&
-            (identical(other.interstitialApp, interstitialApp) ||
-                const DeepCollectionEquality()
-                    .equals(other.interstitialApp, interstitialApp)));
-  }
-
-  @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(enable) ^
-      const DeepCollectionEquality().hash(bannerHome) ^
-      const DeepCollectionEquality().hash(bannerNewConversation) ^
-      const DeepCollectionEquality().hash(bannerConversationSetting) ^
-      const DeepCollectionEquality().hash(interstitialApp);
-
-  @JsonKey(ignore: true)
-  @override
-  _$AdConfigsCopyWith<_AdConfigs> get copyWith =>
-      __$AdConfigsCopyWithImpl<_AdConfigs>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$_$_AdConfigsToJson(this);
-  }
-}
-
-abstract class _AdConfigs implements AdConfigs {
-  const factory _AdConfigs(
-      {@JsonKey(name: "enable")
-          bool enable,
-      @JsonKey(name: "banner_home")
-          BannerConfig bannerHome,
-      @JsonKey(name: "banner_new_conversation")
-          BannerConfig bannerNewConversation,
-      @JsonKey(name: "banner_conversation_setting")
-          BannerConfig bannerConversationSetting,
-      @JsonKey(name: "interstitial_app")
-          InterstitialConfig interstitialApp}) = _$_AdConfigs;
-
-  factory _AdConfigs.fromJson(Map<String, dynamic> json) =
-      _$_AdConfigs.fromJson;
-
-  @override
-  @JsonKey(name: "enable")
-  bool get enable => throw _privateConstructorUsedError;
-  @override
-  @JsonKey(name: "banner_home")
-  BannerConfig get bannerHome => throw _privateConstructorUsedError;
-  @override
-  @JsonKey(name: "banner_new_conversation")
-  BannerConfig get bannerNewConversation => throw _privateConstructorUsedError;
-  @override
-  @JsonKey(name: "banner_conversation_setting")
-  BannerConfig get bannerConversationSetting =>
-      throw _privateConstructorUsedError;
-  @override
-  @JsonKey(name: "interstitial_app")
-  InterstitialConfig get interstitialApp => throw _privateConstructorUsedError;
-  @override
-  @JsonKey(ignore: true)
-  _$AdConfigsCopyWith<_AdConfigs> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
 BannerConfig _$BannerConfigFromJson(Map<String, dynamic> json) {
   return _BannerConfig.fromJson(json);
 }
@@ -361,7 +24,8 @@ class _$BannerConfigTearOff {
       {@JsonKey(name: "enable") bool enable = false,
       @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid = '',
       @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS = '',
-      @JsonKey(name: "position") int position = 0,
+      @JsonKey(name: "position", defaultValue: 0) int position = 0,
+      @JsonKey(name: "distance") int? distance,
       @JsonKey(name: "width") int? width,
       @JsonKey(name: "height") int? height}) {
     return _BannerConfig(
@@ -369,6 +33,7 @@ class _$BannerConfigTearOff {
       adUnitIdAndroid: adUnitIdAndroid,
       adUnitIdIOS: adUnitIdIOS,
       position: position,
+      distance: distance,
       width: width,
       height: height,
     );
@@ -390,8 +55,10 @@ mixin _$BannerConfig {
   String get adUnitIdAndroid => throw _privateConstructorUsedError;
   @JsonKey(name: "ad_unit_id_ios")
   String get adUnitIdIOS => throw _privateConstructorUsedError;
-  @JsonKey(name: "position")
+  @JsonKey(name: "position", defaultValue: 0)
   int get position => throw _privateConstructorUsedError;
+  @JsonKey(name: "distance")
+  int? get distance => throw _privateConstructorUsedError;
   @JsonKey(name: "width")
   int? get width => throw _privateConstructorUsedError;
   @JsonKey(name: "height")
@@ -412,7 +79,8 @@ abstract class $BannerConfigCopyWith<$Res> {
       {@JsonKey(name: "enable") bool enable,
       @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid,
       @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS,
-      @JsonKey(name: "position") int position,
+      @JsonKey(name: "position", defaultValue: 0) int position,
+      @JsonKey(name: "distance") int? distance,
       @JsonKey(name: "width") int? width,
       @JsonKey(name: "height") int? height});
 }
@@ -431,6 +99,7 @@ class _$BannerConfigCopyWithImpl<$Res> implements $BannerConfigCopyWith<$Res> {
     Object? adUnitIdAndroid = freezed,
     Object? adUnitIdIOS = freezed,
     Object? position = freezed,
+    Object? distance = freezed,
     Object? width = freezed,
     Object? height = freezed,
   }) {
@@ -451,6 +120,10 @@ class _$BannerConfigCopyWithImpl<$Res> implements $BannerConfigCopyWith<$Res> {
           ? _value.position
           : position // ignore: cast_nullable_to_non_nullable
               as int,
+      distance: distance == freezed
+          ? _value.distance
+          : distance // ignore: cast_nullable_to_non_nullable
+              as int?,
       width: width == freezed
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
@@ -474,7 +147,8 @@ abstract class _$BannerConfigCopyWith<$Res>
       {@JsonKey(name: "enable") bool enable,
       @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid,
       @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS,
-      @JsonKey(name: "position") int position,
+      @JsonKey(name: "position", defaultValue: 0) int position,
+      @JsonKey(name: "distance") int? distance,
       @JsonKey(name: "width") int? width,
       @JsonKey(name: "height") int? height});
 }
@@ -495,6 +169,7 @@ class __$BannerConfigCopyWithImpl<$Res> extends _$BannerConfigCopyWithImpl<$Res>
     Object? adUnitIdAndroid = freezed,
     Object? adUnitIdIOS = freezed,
     Object? position = freezed,
+    Object? distance = freezed,
     Object? width = freezed,
     Object? height = freezed,
   }) {
@@ -515,6 +190,10 @@ class __$BannerConfigCopyWithImpl<$Res> extends _$BannerConfigCopyWithImpl<$Res>
           ? _value.position
           : position // ignore: cast_nullable_to_non_nullable
               as int,
+      distance: distance == freezed
+          ? _value.distance
+          : distance // ignore: cast_nullable_to_non_nullable
+              as int?,
       width: width == freezed
           ? _value.width
           : width // ignore: cast_nullable_to_non_nullable
@@ -534,7 +213,8 @@ class _$_BannerConfig extends _BannerConfig {
       {@JsonKey(name: "enable") this.enable = false,
       @JsonKey(name: "ad_unit_id_android") this.adUnitIdAndroid = '',
       @JsonKey(name: "ad_unit_id_ios") this.adUnitIdIOS = '',
-      @JsonKey(name: "position") this.position = 0,
+      @JsonKey(name: "position", defaultValue: 0) this.position = 0,
+      @JsonKey(name: "distance") this.distance,
       @JsonKey(name: "width") this.width,
       @JsonKey(name: "height") this.height})
       : super._();
@@ -552,8 +232,11 @@ class _$_BannerConfig extends _BannerConfig {
   @JsonKey(name: "ad_unit_id_ios")
   final String adUnitIdIOS;
   @override
-  @JsonKey(name: "position")
+  @JsonKey(name: "position", defaultValue: 0)
   final int position;
+  @override
+  @JsonKey(name: "distance")
+  final int? distance;
   @override
   @JsonKey(name: "width")
   final int? width;
@@ -563,7 +246,7 @@ class _$_BannerConfig extends _BannerConfig {
 
   @override
   String toString() {
-    return 'BannerConfig(enable: $enable, adUnitIdAndroid: $adUnitIdAndroid, adUnitIdIOS: $adUnitIdIOS, position: $position, width: $width, height: $height)';
+    return 'BannerConfig(enable: $enable, adUnitIdAndroid: $adUnitIdAndroid, adUnitIdIOS: $adUnitIdIOS, position: $position, distance: $distance, width: $width, height: $height)';
   }
 
   @override
@@ -581,6 +264,9 @@ class _$_BannerConfig extends _BannerConfig {
             (identical(other.position, position) ||
                 const DeepCollectionEquality()
                     .equals(other.position, position)) &&
+            (identical(other.distance, distance) ||
+                const DeepCollectionEquality()
+                    .equals(other.distance, distance)) &&
             (identical(other.width, width) ||
                 const DeepCollectionEquality().equals(other.width, width)) &&
             (identical(other.height, height) ||
@@ -594,6 +280,7 @@ class _$_BannerConfig extends _BannerConfig {
       const DeepCollectionEquality().hash(adUnitIdAndroid) ^
       const DeepCollectionEquality().hash(adUnitIdIOS) ^
       const DeepCollectionEquality().hash(position) ^
+      const DeepCollectionEquality().hash(distance) ^
       const DeepCollectionEquality().hash(width) ^
       const DeepCollectionEquality().hash(height);
 
@@ -613,7 +300,8 @@ abstract class _BannerConfig extends BannerConfig {
       {@JsonKey(name: "enable") bool enable,
       @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid,
       @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS,
-      @JsonKey(name: "position") int position,
+      @JsonKey(name: "position", defaultValue: 0) int position,
+      @JsonKey(name: "distance") int? distance,
       @JsonKey(name: "width") int? width,
       @JsonKey(name: "height") int? height}) = _$_BannerConfig;
   const _BannerConfig._() : super._();
@@ -631,8 +319,11 @@ abstract class _BannerConfig extends BannerConfig {
   @JsonKey(name: "ad_unit_id_ios")
   String get adUnitIdIOS => throw _privateConstructorUsedError;
   @override
-  @JsonKey(name: "position")
+  @JsonKey(name: "position", defaultValue: 0)
   int get position => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(name: "distance")
+  int? get distance => throw _privateConstructorUsedError;
   @override
   @JsonKey(name: "width")
   int? get width => throw _privateConstructorUsedError;
@@ -658,13 +349,15 @@ class _$InterstitialConfigTearOff {
       @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid = '',
       @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS = '',
       @JsonKey(name: "request_time_to_show") int requestTimeToShow = 10,
-      @JsonKey(name: "fail_time_to_stop") int failTimeToStop = 3}) {
+      @JsonKey(name: "fail_time_to_stop") int failTimeToStop = 3,
+      @JsonKey(name: "init_request_time") int initRequestTime = 0}) {
     return _InterstitialConfig(
       enable: enable,
       adUnitIdAndroid: adUnitIdAndroid,
       adUnitIdIOS: adUnitIdIOS,
       requestTimeToShow: requestTimeToShow,
       failTimeToStop: failTimeToStop,
+      initRequestTime: initRequestTime,
     );
   }
 
@@ -688,6 +381,8 @@ mixin _$InterstitialConfig {
   int get requestTimeToShow => throw _privateConstructorUsedError;
   @JsonKey(name: "fail_time_to_stop")
   int get failTimeToStop => throw _privateConstructorUsedError;
+  @JsonKey(name: "init_request_time")
+  int get initRequestTime => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -705,7 +400,8 @@ abstract class $InterstitialConfigCopyWith<$Res> {
       @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid,
       @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS,
       @JsonKey(name: "request_time_to_show") int requestTimeToShow,
-      @JsonKey(name: "fail_time_to_stop") int failTimeToStop});
+      @JsonKey(name: "fail_time_to_stop") int failTimeToStop,
+      @JsonKey(name: "init_request_time") int initRequestTime});
 }
 
 /// @nodoc
@@ -724,6 +420,7 @@ class _$InterstitialConfigCopyWithImpl<$Res>
     Object? adUnitIdIOS = freezed,
     Object? requestTimeToShow = freezed,
     Object? failTimeToStop = freezed,
+    Object? initRequestTime = freezed,
   }) {
     return _then(_value.copyWith(
       enable: enable == freezed
@@ -746,6 +443,10 @@ class _$InterstitialConfigCopyWithImpl<$Res>
           ? _value.failTimeToStop
           : failTimeToStop // ignore: cast_nullable_to_non_nullable
               as int,
+      initRequestTime: initRequestTime == freezed
+          ? _value.initRequestTime
+          : initRequestTime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -762,7 +463,8 @@ abstract class _$InterstitialConfigCopyWith<$Res>
       @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid,
       @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS,
       @JsonKey(name: "request_time_to_show") int requestTimeToShow,
-      @JsonKey(name: "fail_time_to_stop") int failTimeToStop});
+      @JsonKey(name: "fail_time_to_stop") int failTimeToStop,
+      @JsonKey(name: "init_request_time") int initRequestTime});
 }
 
 /// @nodoc
@@ -783,6 +485,7 @@ class __$InterstitialConfigCopyWithImpl<$Res>
     Object? adUnitIdIOS = freezed,
     Object? requestTimeToShow = freezed,
     Object? failTimeToStop = freezed,
+    Object? initRequestTime = freezed,
   }) {
     return _then(_InterstitialConfig(
       enable: enable == freezed
@@ -805,6 +508,10 @@ class __$InterstitialConfigCopyWithImpl<$Res>
           ? _value.failTimeToStop
           : failTimeToStop // ignore: cast_nullable_to_non_nullable
               as int,
+      initRequestTime: initRequestTime == freezed
+          ? _value.initRequestTime
+          : initRequestTime // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -817,7 +524,8 @@ class _$_InterstitialConfig extends _InterstitialConfig {
       @JsonKey(name: "ad_unit_id_android") this.adUnitIdAndroid = '',
       @JsonKey(name: "ad_unit_id_ios") this.adUnitIdIOS = '',
       @JsonKey(name: "request_time_to_show") this.requestTimeToShow = 10,
-      @JsonKey(name: "fail_time_to_stop") this.failTimeToStop = 3})
+      @JsonKey(name: "fail_time_to_stop") this.failTimeToStop = 3,
+      @JsonKey(name: "init_request_time") this.initRequestTime = 0})
       : super._();
 
   factory _$_InterstitialConfig.fromJson(Map<String, dynamic> json) =>
@@ -838,10 +546,13 @@ class _$_InterstitialConfig extends _InterstitialConfig {
   @override
   @JsonKey(name: "fail_time_to_stop")
   final int failTimeToStop;
+  @override
+  @JsonKey(name: "init_request_time")
+  final int initRequestTime;
 
   @override
   String toString() {
-    return 'InterstitialConfig(enable: $enable, adUnitIdAndroid: $adUnitIdAndroid, adUnitIdIOS: $adUnitIdIOS, requestTimeToShow: $requestTimeToShow, failTimeToStop: $failTimeToStop)';
+    return 'InterstitialConfig(enable: $enable, adUnitIdAndroid: $adUnitIdAndroid, adUnitIdIOS: $adUnitIdIOS, requestTimeToShow: $requestTimeToShow, failTimeToStop: $failTimeToStop, initRequestTime: $initRequestTime)';
   }
 
   @override
@@ -861,7 +572,10 @@ class _$_InterstitialConfig extends _InterstitialConfig {
                     .equals(other.requestTimeToShow, requestTimeToShow)) &&
             (identical(other.failTimeToStop, failTimeToStop) ||
                 const DeepCollectionEquality()
-                    .equals(other.failTimeToStop, failTimeToStop)));
+                    .equals(other.failTimeToStop, failTimeToStop)) &&
+            (identical(other.initRequestTime, initRequestTime) ||
+                const DeepCollectionEquality()
+                    .equals(other.initRequestTime, initRequestTime)));
   }
 
   @override
@@ -871,7 +585,8 @@ class _$_InterstitialConfig extends _InterstitialConfig {
       const DeepCollectionEquality().hash(adUnitIdAndroid) ^
       const DeepCollectionEquality().hash(adUnitIdIOS) ^
       const DeepCollectionEquality().hash(requestTimeToShow) ^
-      const DeepCollectionEquality().hash(failTimeToStop);
+      const DeepCollectionEquality().hash(failTimeToStop) ^
+      const DeepCollectionEquality().hash(initRequestTime);
 
   @JsonKey(ignore: true)
   @override
@@ -890,7 +605,8 @@ abstract class _InterstitialConfig extends InterstitialConfig {
           @JsonKey(name: "ad_unit_id_android") String adUnitIdAndroid,
           @JsonKey(name: "ad_unit_id_ios") String adUnitIdIOS,
           @JsonKey(name: "request_time_to_show") int requestTimeToShow,
-          @JsonKey(name: "fail_time_to_stop") int failTimeToStop}) =
+          @JsonKey(name: "fail_time_to_stop") int failTimeToStop,
+          @JsonKey(name: "init_request_time") int initRequestTime}) =
       _$_InterstitialConfig;
   const _InterstitialConfig._() : super._();
 
@@ -912,6 +628,9 @@ abstract class _InterstitialConfig extends InterstitialConfig {
   @override
   @JsonKey(name: "fail_time_to_stop")
   int get failTimeToStop => throw _privateConstructorUsedError;
+  @override
+  @JsonKey(name: "init_request_time")
+  int get initRequestTime => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$InterstitialConfigCopyWith<_InterstitialConfig> get copyWith =>
